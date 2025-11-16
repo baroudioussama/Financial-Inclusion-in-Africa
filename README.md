@@ -33,13 +33,12 @@
 ---
 ## Results for Requested Kenya IDs
 
-uniqueid,Prediction,Probability
-uniqueid_6714 x Kenya,1,0.892
-uniqueid_6722 x Kenya,0,0.125
-uniqueid_7867 x Kenya,1,0.957
-uniqueid_8103 x Kenya,0,0.079
-uniqueid_8657 x Kenya,1,0.635
-
+|uniqueid|Prediction|Probability|
+|uniqueid_6714 x Kenya|1|0.892|
+|uniqueid_6722 x Kenya|0|0.125|
+|uniqueid_7867 x Kenya|1|0.957|
+|uniqueid_8103 x Kenya|0|0.079|
+|uniqueid_8657 x Kenya||1|0.635|
 ## Model
 ```python
 GradientBoostingClassifier(
