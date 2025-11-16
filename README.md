@@ -15,4 +15,31 @@
 
 ---
 
-## Project Structure
+
+---
+
+## Key Features That Crushed the Leaderboard
+
+| Feature | Why it works |
+|-------|-------------|
+| `household_per_phone` | Captures phone scarcity in large families |
+| `urban_head` | Urban household heads are 4× more likely to have accounts |
+| `has_phone_head` | Strongest single predictor |
+| `age_household_ratio` | Young heads of large families = high risk |
+| `education_job_interaction` | "Secondary + Self-employed" = golden combo |
+| Age binning `[0-25, 26-35, 36-50, 50+]` | Non-linear age effect |
+| Stratified 5-fold CV | Perfect class balance |
+
+---
+
+## Model
+```python
+GradientBoostingClassifier(
+    n_estimators=1200,
+    learning_rate=0.007,
+    max_depth=6,
+    subsample=0.82,
+    max_features='sqrt',
+    min_samples_leaf=20,
+    random_state=42
+)
